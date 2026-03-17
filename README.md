@@ -44,22 +44,22 @@ The project demonstrates proficiency in **object-oriented programming in C++**, 
 
 ```
 banking-application-cpp/
-├── src/
+├── src/                         # Core application logic (C++ / Qt)
 │   ├── main.cpp                 # Application entry point
-│   ├── mainwindow.h/.cpp        # Main window UI (Qt)
-│   ├── account.h/.cpp           # Account class (base)
-│   ├── savingsaccount.h/.cpp    # Savings account (inherits Account)
-│   ├── currentaccount.h/.cpp   # Current account (inherits Account)
-│   ├── transaction.h/.cpp       # Transaction record model
-│   ├── databasemanager.h/.cpp   # SQL database abstraction layer
-│   └── bankingsystem.h/.cpp     # Core business logic controller
-├── ui/
-│   ├── mainwindow.ui            # Qt Designer UI form
-│   └── accountdialog.ui         # Account creation dialog
-├── resources/
-│   └── icons/                   # Application icons
-├── SPM3.pro                # Qt project file
-└── README.md
+│   ├── mainwindow.h/.cpp        # Main window UI logic
+│   ├── account.h/.cpp           # Base Account class
+│   ├── savingsaccount.h/.cpp    # Savings account implementation
+│   ├── currentaccount.h/.cpp    # Current account implementation
+│   ├── transaction.h/.cpp       # Transaction model
+│   ├── databasemanager.h/.cpp   # Database access layer (SQLite)
+│   └── bankingsystem.h/.cpp     # Core business logic
+│
+├── img/                         # Screenshots / UI visuals
+│
+├── doc/                         # Project documentation
+│
+├── SPM3.pro                     # Qt project configuration file
+├── README.md                    # Project documentation                  
 ```
 
 ---
@@ -102,11 +102,12 @@ git clone https://github.com/anastasia638/banking-application-cpp.git
 cd banking-application-cpp
 
 # Generate Makefile and compile
-qmake banking.pro
+select SPM3.pro
+qmake SPM3.pro
 make
 
 # Run the application
-./banking
+./SPM3
 ```
 
 ---
