@@ -88,7 +88,7 @@ banking-application-cpp/
 
 ```
 1. Open Qt Creator
-2. File > Open Project > select banking.pro
+2. File > Open Project > select SPM3.pro
 3. Configure kit (compiler + Qt version)
 4. Click Build > Build Project
 5. Click Run
@@ -102,7 +102,6 @@ git clone https://github.com/anastasia638/banking-application-cpp.git
 cd banking-application-cpp
 
 # Generate Makefile and compile
-select SPM3.pro
 qmake SPM3.pro
 make
 
