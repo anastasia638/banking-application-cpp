@@ -58,7 +58,7 @@ banking-application-cpp/
 │   └── accountdialog.ui         # Account creation dialog
 ├── resources/
 │   └── icons/                   # Application icons
-├── banking.pro                # Qt project file
+├── SPM3.pro                # Qt project file
 └── README.md
 ```
 
